@@ -624,6 +624,7 @@ li {
   margin-top: 65px;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 70px;
 }
 .main-footer .footer__legal nav ul {
   display: flex;
