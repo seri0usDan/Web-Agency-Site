@@ -17,7 +17,7 @@ li {
 	list-style-type: none;
 }
 .wrapper {
-	width: 60%;
+	width: 960px;
 	margin: 0 auto;
 }
 .landing {
@@ -77,6 +77,7 @@ li {
 			font-size: 32px;
 			position: relative;
 			display: inline-block;
+			white-space: nowrap;
 			&::after {
 				content: "";
 				display: inline-block;
@@ -113,10 +114,10 @@ li {
 			outline: none;
 			&:hover {
 				cursor: pointer;
-				background: #000;
+				background: #00e0d0;
 				color: #FFF;
-				border: 1px solid #FFF;
-				transition: 0.4s;
+				border: none;
+				transition: 0.4s ease-out;
 			}
 		}
 	}
@@ -168,6 +169,10 @@ li {
 			text-transform: uppercase;
 			&:hover {
 				cursor: pointer;
+				background: #00e0d0;
+				color: #FFF;
+				border: none;
+				transition: 0.4s ease-out;
 			}
 		}
 	}
@@ -408,6 +413,10 @@ li {
 		text-transform: uppercase;
 		&:hover {
 			cursor: pointer;
+			background: #00e0d0;
+			color: #FFF;
+			border: none;
+			transition: 0.4s ease-out;
 		}
 	}
 }
@@ -439,15 +448,24 @@ li {
 		}
 	}
 	& .works-grid { 
+		margin: 0 auto;
 		margin-top: 72px;
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		max-width: 1600px;
+		
 		& .work-piece {
 			min-width: 250px;
 			min-height: 190px;
 			background: #CCC;
 			border: 1px solid black;
+			background-size: cover;
+			cursor: pointer;
+			&:hover {
+				opacity: .6;
+				transition: opacity .2s ease;
+			}
 		}
 	}
 	& button {
@@ -465,6 +483,10 @@ li {
 		font-weight: 400;
 		&:hover {
 			cursor: pointer;
+			background: #00e0d0;
+			color: #FFF;
+			border: none;
+			transition: 0.4s ease-out;
 		}
 	}
 }
@@ -518,19 +540,27 @@ li {
 		margin-top: 45px;
 		display: flex;
 		justify-content: center;
+		align-items: center;
 		position: relative;
+		padding-bottom: 74px;
+		& .fas {
+			color: #858486;
+			font-size: 25px;
+			margin: 0 30px;
+			cursor: pointer;
+		}
 		& div {
 			width: 45px;
 			height: 45px;
 			border-radius: 50%;
 			background: #FFF;
 			margin: 7px;
-			margin-bottom: 74px;
-
-		}
-		&::before {
-				
+			background-size: cover;
+			&:nth-child(4) {
+				width: 70px;
+				height: 70px;
 			}
+		}
 	}
 }
 #contact {
@@ -551,6 +581,84 @@ li {
 	
 	& .news {
 		width: 45%;
+		& .name {
+			width: 90%;
+			height: 45px;
+			font-size: 14px;
+			font-family: @roboto;
+			font-weight: 300;
+			margin-top: 35px;
+			&::placeholder {
+				color: #413d4b;
+				opacity: 0.5;
+				letter-spacing: 0.7px;
+				padding-left: 20px;
+			}
+		}
+		& .email {
+			width: 90%;
+			height: 45px;
+			font-size: 14px;
+			font-family: @roboto;
+			font-weight: 300;
+			margin-top: 22px;
+			&::placeholder {
+				color: #413d4b;
+				opacity: 0.5;
+				letter-spacing: 0.7px;
+				padding-left: 20px;
+			}
+		}
+		.subject {
+			width: 90%;
+			height: 45px;
+			font-size: 14px;
+			font-family: @roboto;
+			font-weight: 300;
+			margin-top: 22px;
+			&::placeholder {
+				color: #413d4b;
+				opacity: 0.5;
+				letter-spacing: 0.7px;
+				padding-left: 20px;
+			}
+		}
+		.message {
+			width: 90%;
+			min-height: 200px;
+			font-size: 14px;
+			font-family: @roboto;
+			font-weight: 300;
+			margin-top: 22px;
+			&::placeholder {
+				color: #413d4b;
+				opacity: 0.5;
+				letter-spacing: 0.7px;
+				padding-left: 20px;
+				padding-top: 20px;
+			}
+		}
+		& .button {
+			margin-top: 22px;
+			width: 120px;
+			height: 40px;
+			color: #00e0d0;
+			background: transparent;
+			border-radius: 1px;
+			border: 1px solid #00e0d0;
+			color: #00e0d0;
+			font-family: @hammer;
+			font-size: 16px;
+			font-weight: 400;
+			&:hover {
+				cursor: pointer;
+				background: #00e0d0;
+				color: #FFF;
+				border: none;
+				transition: 0.4s ease-out;
+			}
+		}
+
 
 	}
 	& .clients {

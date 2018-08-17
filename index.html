@@ -19,12 +19,12 @@
 				<nav>
 					<ul>
 						<li><a href="#">HOME</a></li>
-						<li><a href="#">ABOUT</a></li>
-						<li><a href="#">EXPERTISE</a></li>
-						<li><a href="#">TEAMS</a></li>
-						<li><a href="#">WORKS</a></li>
-						<li><a href="#">PEOPLE SAY</a></li>
-						<li><a href="#">CONTACT</a></li>
+						<li><a href="#about">ABOUT</a></li>
+						<li><a href="#expertise">EXPERTISE</a></li>
+						<li><a href="#team">TEAMS</a></li>
+						<li><a href="#works">WORKS</a></li>
+						<li><a href="#feedback">PEOPLE SAY</a></li>
+						<li><a href="#contact">CONTACT</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -38,7 +38,7 @@
 	<section id="story">
 		<div class="wrapper">
 			<img src="images/triangle.png" alt="Some sort of shape">
-			<div class="info">
+			<div class="info" id = "about">
 				<h2>OUR STORY</h2>
 				<p>
 					This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
@@ -131,41 +131,51 @@
 			<a href="#">See All Project in dribbble</a>
 		</div>
 		<div class="works-grid">
-			<div class="work-piece"></div>
-			<div class="work-piece"></div>
-			<div class="work-piece"></div>
-			<div class="work-piece"></div>
-			<div class="work-piece"></div>
-			<div class="work-piece"></div>
-			<div class="work-piece"></div>
-			<div class="work-piece"></div>
-			<div class="work-piece"></div>
-			<div class="work-piece"></div>
-			<div class="work-piece"></div>
-			<div class="work-piece"></div>
+			<div class="work-piece" style = "background-image: url(images/works/1.jpg);"></div>
+			<div class="work-piece" style = "background-image: url(images/works/2.gif);"></div>
+			<div class="work-piece" style = "background-image: url(images/works/3.png);"></div>
+			<div class="work-piece" style = "background-image: url(images/works/4.gif);"></div>
+			<div class="work-piece" style = "background-image: url(images/works/5.png);"></div>
+			<div class="work-piece" style = "background-image: url(images/works/6.png);"></div>
+			<div class="work-piece" style = "background-image: url(images/works/7.png);"></div>
+			<div class="work-piece" style = "background-image: url(images/works/8.png);"></div>
+			<div class="work-piece" style = "background-image: url(images/works/9.png);"></div>
+			<div class="work-piece" style = "background-image: url(images/works/10.gif);"></div>
+			<div class="work-piece" style = "background-image: url(images/works/11.gif);"></div>
+			<div class="work-piece" style = "background-image: url(images/works/12.png);"></div>
 		</div>
 		<button type = "button">LEARN MORE</button>
 	</section>
-	<section class="feedback-slider">
+	<section class="feedback-slider" id = "feedback">
 		<div class="wrapper">
 			<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
 			<h3>JANE GALADRIEL</h3>
 			<span>CEO TENGKUREP</span>
 			<div class="slider-controls">
-				<div><img src="" alt=""></div>
-				<div><img src="" alt=""></div>
-				<div><img src="" alt=""></div>
-				<div><img src="" alt=""></div>
-				<div><img src="" alt=""></div>
+				<i class="fas fa-chevron-left"></i>
+				<div style = "background-image: url(images/customer/portrait-1.jpg);"></div>
+				<div style = "background-image: url(images/customer/portrait-2.jpg);"></div>
+				<div style = "background-image: url(images/customer/portrait-3.jpg);"></div>
+				<div style = "background-image: url(images/customer/portrait-4.jpg);"></div>
+				<div style = "background-image: url(images/customer/portrait-5.jpg);"></div>
+				<i class="fas fa-chevron-right"></i>
 			</div>
+			
 		</div>
 	</section>
 	<section id="contact">
 		<div class="wrapper">
-			<div class="news">
+			<div class="news" id = "contact">
 
 				<h2>GIVE US A GOOD NEWS</h2>
-				<form action=""></form>
+				<form action="submit">
+					<input class = "name" type="text" name = "name" placeholder="Name">
+					<input class = "email" type="text" name = "email" placeholder="Email">
+					<input class = "subject" type="text" name = "subject" placeholder="Subject">
+					<textarea class = "message" name="message" placeholder="Your Message"></textarea>
+					<input type="button" value = "SUBMIT" class = "button">
+					
+				</form>
 			</div>
 			<div class="clients">
 				<h2>OUR HAPPY CLIENT</h2>
@@ -223,6 +233,10 @@
 		</div>
 	</footer>
 
-	
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+	<script src = "js/main.js"></script>
 </body>
 </html>
