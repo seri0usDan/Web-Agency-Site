@@ -492,7 +492,7 @@ li {
   display: block;
   position: absolute;
   font-size: 100px;
-  font-weight: 400px;
+  font-weight: 400;
   opacity: 0.9;
   color: #FFF;
   bottom: calc(100% - 100px);
@@ -694,6 +694,7 @@ li {
   font-weight: 300;
   line-height: 26px;
   letter-spacing: 0.35px;
+  width: 70%;
 }
 .main-footer .footer__container .studio {
   width: 32%;
@@ -707,6 +708,7 @@ li {
   letter-spacing: 0.35px;
   margin-left: 10px;
   font-style: normal;
+  width: 80%;
 }
 .main-footer .footer__container .studio address::before {
   content: url(../images/map.png);
@@ -756,4 +758,61 @@ li {
   font-weight: 400;
   line-height: 26px;
   color: #FFF;
+}
+.main-footer .touch form {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+.main-footer .touch .email {
+  height: 45px;
+  border: 1px solid #9a92ab;
+  background: transparent;
+  min-width: 210px;
+}
+.main-footer .touch .email::placeholder {
+  color: #b8b4c5;
+  padding: 16px 15px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.main-footer .touch button {
+  height: 45px;
+  width: 70px;
+  font-size: 25px;
+  background: rgba(154, 146, 171, 0.7);
+  border: none;
+  margin-left: 10px;
+}
+.main-footer .touch button:hover {
+  cursor: pointer;
+  background: rgba(154, 146, 171, 0.9);
+  transition: 0.25s ease;
+}
+.social-links {
+  display: flex;
+  margin-top: 25px;
+}
+.social-links div {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid #FFF;
+  background: transparent;
+  margin-right: 10px;
+  color: #FFF;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-links div:last-child {
+  margin-right: 0;
+}
+.social-links div:hover {
+  background: #FFF;
+  color: #000;
+  transition: 0.25s ease;
+  cursor: pointer;
 }
