@@ -3,7 +3,7 @@ PSD to HTML practice, "Tajem_Web Agency" site markup.
 
 Technology used: HTML5 CSS JQuery Less
 
-Watch online at: (https://seri0usdan.github.io/Web-Agency-Site/)
+Watch online @ (https://thedanielras.github.io/Web-Agency-Site/)
 
 ![Pricing Table][logo]
 
